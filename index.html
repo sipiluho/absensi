@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport fit cover untuk memastikan area layar penuh tanpa terpotong batas browser -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>"ABSENSI TEKNIK SIPIL UHO"</title>
+
+  <style>
+    /* Reset & Penguncian Viewport Layar HP */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      height: 100dvh; /* Dynamic viewport height mengikuti tinggi riil layar HP */
+      overflow: hidden; /* Mencegah scroll ganda/scrollbar luar */
+      background-color: #080c14; /* Warna latar gelap sesuai tema Zettbos Dark */
+      position: fixed; /* Mengunci wrapper agar tidak ikut tertarik saat scroll */
+      inset: 0;
+    }
+
+    /* Iframe Responsif Penuh */
+    iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      height: 100dvh; /* Pas tepat dengan area pandang aplikasi tanpa terdorong address bar */
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 
+    URL Deployment Asli & Aktif dari Google Apps Script:
+    Atribut allow="camera; microphone; geolocation" disematkan agar fitur upload foto bukti transfer 
+    & kamera housekeeping tidak diblokir oleh kebijakan keamanan browser saat diakses lewat GitHub Pages.
+  -->
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbxO1NslzgJL1_ltW1wtK54zeq3Tz1zAA7_iGeGiMMlpuQztI49k_eDbiA7BvsYbk0WebQ/exec"
+    allow="camera; microphone; geolocation"
+    allowfullscreen>
+  </iframe>
+
+</body>
+</html>
